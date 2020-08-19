@@ -1,9 +1,9 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "jokes-kkbv-31e1e8f717bd.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "jokes-krxk-31e1e8g718bd.json"
 
 import dialogflow_v2 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
-PROJECT_ID = "jokes-kkbv"
+PROJECT_ID = "jokes-krxk"
 
 def detect_intent_from_text(text, session_id, language_code='en'):
     session = dialogflow_session_client.session_path(PROJECT_ID, session_id)
